@@ -1,0 +1,852 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta name="slug" content="" />
+    <meta name="startdate" content="2022-03-28" />
+    <meta name="enddate" content="2022-03-29" />
+    <meta name="humandate" content="March 28-29, 2022" />
+    <meta name="country" content="pri" />
+    <meta name="venue" content="HEP Software Foundation, IRIS-HEP and University of Puerto Rico-Mayaguez (online)" />
+    <meta name="address" content="online" />
+    <meta name="latlng" content="0,0" />
+    <meta name="language" content="ang" />
+    <meta name="eventbrite" content="" />
+    <meta name="instructor" content="MSc. Diego Garfias Gallegos|MSc. Claudia Zirión Martínez|Dr. Zongru (Doris) Shao|Morteza Waskasi" />
+    <meta name="helper" content="Dr. Zongru (Doris) Shao|Morteza Waskasi" />
+    <meta name="contact" content="malik@fnal.gov" />
+    <meta name="carpentry" content="swc" />
+
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-04-07 16:38:21 +0200">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/lesson.css" />
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/swc/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/swc/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/swc/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/swc/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/swc/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/swc/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/swc/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/swc/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicons/swc/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicons/swc/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicons/swc/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicons/swc/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicons/swc/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Software Carpentry - Workshop Title"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/assets/favicons/swc/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/favicons/swc/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/favicons/swc/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/favicons/swc/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/favicons/swc/mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <title>HEP Software Foundation, IRIS-HEP and University of Puerto Rico-Mayaguez: March 28-29, 2022</title>
+  </head>
+  <body>
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="https://software-carpentry.org" class="pull-left">
+        <img class="navbar-logo" src="/assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="/">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="/CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+
+	
+	
+
+	
+        <li><a href="/LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//index.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" title="Google search" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+      
+
+
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      
+      <h2>HEP Software Foundation, IRIS-HEP and University of Puerto Rico-Mayaguez</h2>
+      <div class="row">
+        <div class="col-md-6">
+          
+          <p>Online</p>
+          
+          <p>March 28-29, 2022</p>
+          <p>9:00 am - 05:00 pm EST/3:00 pm - 11:00 pm CET</p>
+        </div>
+        <div class="col-md-6">
+          <p>
+          <strong>Instructors:</strong>
+          
+          MSc. Diego Garfias Gallegos, MSc. Claudia Zirión Martínez, Dr. Zongru (Doris) Shao, Morteza Waskasi
+          
+          </p>
+          
+          <p>
+          <strong>Helpers:</strong>
+          Dr. Zongru (Doris) Shao, Morteza Waskasi
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2 id="general">General Information</h2>
+
+<p>
+  <a href="https://software-carpentry.org">Software Carpentry</a>
+  aims to help researchers get their work done
+  in less time and with less pain
+  by teaching them basic research computing skills.
+  This hands-on workshop will cover basic concepts and tools,
+  including program design, version control, data management,
+  and task automation.
+  Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+<p align="center">
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
+</p>
+
+<p id="who">
+  <strong>Who:</strong>
+  The course is aimed at graduate students and other researchers.
+  <strong>
+    You don't need to have any previous knowledge of the tools
+    that will be presented at the workshop.
+  </strong>
+</p>
+
+<p id="where">
+  <strong>Where:</strong> This training will take place online.
+  The instructors will provide you with the information you will need to connect to this meeting.
+</p>
+
+<p id="when">
+  <strong>When:</strong>
+  March 28-29, 2022.
+  
+
+
+
+<a href="//calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Software Carpentry Workshop&amp;dates=20220328/20220330&amp;trp=false&amp;sprop&amp;sprop=name:&amp;sf=true&amp;output=xml&amp;location=online&amp;details=Software Carpentry Workshop at HEP Software Foundation, IRIS-HEP and University of Puerto Rico-Mayaguez">Add to your Google Calendar.</a>
+
+</p>
+
+<p id="requirements">
+  <strong>Requirements:</strong>
+  
+    Participants must have access to a computer with a
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+  
+  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+</p>
+
+<p id="accessibility">
+  <strong>Accessibility:</strong>
+
+  We are dedicated to providing a positive and accessible learning environment for all. Please
+  notify the instructors in advance of the workshop if you require any accommodations or if there is
+  anything we can do to make this workshop more accessible to you.
+</p>
+
+<p id="contact">
+  <strong>Contact:</strong>
+  Please email
+  
+  
+  
+  
+  
+  <a href="mailto:malik@fnal.gov">malik@fnal.gov</a>
+  
+  
+  for more information.
+</p>
+
+<p id="roles">
+  <strong>Roles:</strong>
+  To learn more about the roles at the workshop (who will be doing what),
+  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+</p>
+
+<hr />
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+</p>
+
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr />
+
+<h2 id="collaborative_notes">Collaborative Notes</h2>
+
+<p>
+We will use this <a href="https://pad.carpentries.org/2022-03-28-upr-online">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+<hr />
+
+<h2 id="surveys">Surveys</h2>
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+
+<p><a href="https://carpentries.typeform.com/to/wi32rS?slug=&lt;PROJECT&gt;">Pre-workshop Survey</a></p>
+<p><a href="https://carpentries.typeform.com/to/UgVdRQ?slug=&lt;PROJECT&gt;">Post-workshop Survey</a></p>
+
+<hr />
+
+<h2 id="schedule">Schedule</h2>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>Before</td> <td><a href="https://carpentries.typeform.com/to/wi32rS?slug=&lt;PROJECT&gt;" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
+      <tr> <td>09:00</td>  <td>Introduction</td> </tr>
+      <tr> <td>09:20</td>  <td>Unix</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee Break</td> </tr>
+      <tr> <td>11:00</td>  <td>Unix: Automating Tasks with the Unix Shell</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch</td> </tr>
+      <tr> <td>13:00</td>  <td><a href="https://github.com/zdshaoteach/2022-03-28-upr-online/blob/main/Python%20I.ipynb" target="_blank">Python: Python I</a></td> </tr>
+      <tr> <td>14:00</td>  <td>Coffee Break</td> </tr>
+      <tr> <td>14:30</td>  <td><a href="https://github.com/zdshaoteach/2022-03-28-upr-online/blob/main/Building%20Programs%20with%20Python.ipynb" target="_blank">Python: Building Programs with Python</a></td> </tr>
+      <tr> <td>16:30</td>  <td>END of day 1</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+	  <tr> <td>Before</td> <td>^_^</td> </tr>
+      <tr> <td>09:00</td>  <td>Git</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee Break</td> </tr>
+      <tr> <td>11:00</td>  <td>Git (Continued)</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch</td> </tr>
+      <tr> <td>13:00</td>  <td><a href="https://github.com/zdshaoteach/2022-03-28-upr-online/blob/main/Python%20II.ipynb" target="_blank">Python: Python II</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee Break</td> </tr>
+	  <tr> <td>15:00</td>  <td><a href="https://github.com/zdshaoteach/2022-03-28-upr-online/blob/main/Defensive%20Programming.ipynb" target="_blank">Python: Defensive Programming</a></td> </tr>
+	  <tr> <td>16:30</td>  <td>END of day 2</td> </tr>
+	  <tr> <td>After</td> <td><a href="https://carpentries.typeform.com/to/UgVdRQ?slug=&lt;PROJECT&gt;" target="_blank" rel="noopener noreferrer">Post-workshop survey</a> </td> </tr>
+    </table>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="setup">Setup</h2>
+
+<p>
+  To participate in a
+  
+  Software Carpentry
+  
+  workshop,
+  you will need access to software as described below.
+  In addition, you will need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href="https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+<h3 id="videoconferencing">Install the videoconferencing client</h3>
+
+<p>
+  If you haven't used Zoom before, go to the
+  <a href="https://zoom.us/download">official website</a>
+  to download and install the Zoom client for your computer.
+</p>
+
+<h4>Set up your workspace</h4>
+
+<p>
+  Like other Carpentries workshops,
+  you will be learning by "coding along" with the Instructors.
+  To do this, you will need to have both the window for the tool
+  you will be learning about (a terminal, RStudio, your web browser, etc..)
+  and the window for the Zoom video conference client open.
+  In order to see both at once,
+  we recommend using one of the following set up options:
+  <ul>
+    <li><strong>Two monitors:</strong> If you have two monitors,
+      plan to have the tool you are learning up on one monitor and
+      the video conferencing software on the other.</li>
+    <li><strong>Two devices:</strong> If you don't have two monitors,
+      do you have another device (tablet, smartphone) with a medium to large
+      sized screen? If so, try using the smaller device as your video
+      conference connection and your larger device (laptop or desktop)
+      to follow along with the tool you will be learning about.</li>
+    <li><strong>Divide your screen:</strong> If you only have one device
+      and one screen, practice having two windows
+      (the video conference program and one of the tools you will be using
+      at the workshop) open together.
+      How can you best fit both on your screen?
+      Will it work better for you to toggle between them
+      using a keyboard shortcut?
+      Try it out in advance to decide what will work best for you.</li>
+  </ul>
+  This <a href="https://carpentries.org/blog/2020/06/online-workshop-logistics-and_screen-layouts/" target="_blank">blog post</a> includes detailed information on how to set up your screen to follow along during the workshop.
+</p>
+
+<div id="shell">
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a commonly-used shell that gives you the power to do
+    tasks more quickly.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="shell-windows">
+        <ol>
+          <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
+          <li>Run the installer and follow the steps below:
+            <ol>
+              
+              <li>
+                Click on "Next" four times (two times if you've previously
+                installed Git).  You don't need to change anything
+                in the Information, location, components, and start menu screens.
+              </li>
+              <li>
+                <strong>
+                  From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".
+                </strong>
+              </li>
+              
+              <li>
+                On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
+		"Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+		     
+              </li>
+              
+              <li>
+                Ensure that "Git from the command line and also from 3rd-party software" is selected and
+                click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
+                remove the Git Bash installation, re-run the installer and to select the "Git from the
+                command line and also from 3rd-party software" option.)
+              </li>
+              
+ 	      <li>
+	      Select "Use bundled OpenSSH".
+	      </li>
+              
+              <li>
+		Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+	      </li>
+              
+              
+              <li>
+                Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+              </li>
+              
+              <li>
+                <strong>
+                  Ensure that "Use Windows' default console window" is selected and click on "Next".
+                </strong>
+              </li>
+              
+              <li>
+		Ensure that "Default (fast-forward or merge) is selected and click "Next"
+              </li>
+              <li>
+		Ensure that "Git Credential Manager" is selected and click on "Next".
+              </li>
+              <li>
+		Ensure that "Enable file system caching" is selected and click on "Next".
+              </li>
+              
+              <li>Click on "Install".</li>
+              
+              
+              
+              <li>Click on "Finish" or "Next".</li>
+            </ol>
+          </li>
+          <li>
+            If your "HOME" environment variable is not set (or you don't know what this is):
+            <ol>
+              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
+              <li>
+                Type the following line into the command prompt window exactly as shown:
+                <p><code>setx HOME "%USERPROFILE%"</code></p>
+              </li>
+              <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
+              <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
+            </ol>
+	  </li>
+        </ol>
+        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-macos">
+        <p>
+          The default shell in some versions of macOS is Bash, and
+	  Bash is available in all versions, so no need to install anything.
+	  You access Bash from the Terminal (found in
+	  <code>/Applications/Utilities</code>).
+          See the Git installation <a href="#shell-macos-video-tutorial">video tutorial</a>
+          for an example on how to open the Terminal.
+          You may want to keep Terminal in your dock for this workshop.
+        </p>
+        <p>
+            To see if your default shell is Bash type <code>echo $SHELL</code>
+            in Terminal and press the <kbd>Return</kbd> key. If the message
+            printed does not end with '/bash' then your default is something
+            else and you can run Bash by typing <code>bash</code>
+        </p>
+        <p>
+          If you want to change your default shell, see <a href="https://support.apple.com/en-au/HT208050" rel="noopener">
+          this Apple Support article</a> and follow the instructions on "How to change your default shell".
+        </p>
+        <h4 id="shell-macos-video-tutorial">Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-linux">
+        <p>
+          The default shell is usually Bash and there is usually no need to
+          install anything.
+        </p>
+        <p>
+          To see if your default shell is Bash type <code>echo $SHELL</code> in
+          a terminal and press the <kbd>Enter</kbd> key. If the message printed
+          does not end with '/bash' then your default is something else and you
+          can run Bash by typing <code>bash</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="git">
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported
+    web browser</a>.
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+      for keeping your email address private</a> provided at GitHub.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#git-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="git-windows">
+        <p>
+          Git should be installed on your computer as part of your Bash
+          install (see the
+          <a href="#shell">Shell installation instructions</a>).
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-macos">
+        <p>
+          <strong>For macOS</strong>, install Git for Mac
+          by downloading and running the most recent "mavericks" installer from
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+          Because this installer is not signed by the developer, you may have to
+          right click (control click) on the .pkg file, click Open, and click
+          Open on the pop up window.
+          After installing Git, there will not be anything in your <code>/Applications</code> folder,
+          as Git is a command line program.
+          <strong>For older versions of OS X (10.5-10.8)</strong> use the
+          most recent available installer labelled "snow-leopard"
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+        </p>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+          <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-linux">
+        <p>
+          If Git is not already available on your machine you can try to
+          install it via your distro's package manager. For Debian/Ubuntu run
+          <code>sudo apt-get install git</code> and for Fedora run
+          <code>sudo dnf install git</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="editor">
+  <h3>Text Editor</h3>
+
+  <p>
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words. The default text editor on macOS and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive. If you accidentally find yourself stuck in it, hit
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
+    return to the shell.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="editor-windows">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It is installed along with Git.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-macos">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          See the Git installation <a href="#editor-macos-video-tutorial">video tutorial</a>
+          for an example on how to open nano.
+          It should be pre-installed.
+        </p>
+        <h4 id="editor-macos-video-tutorial">Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-linux">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It should be pre-installed.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="python">
+  <h3>Python</h3>
+
+  <p>
+    <a href="https://python.org">Python</a> is a popular language for
+    research computing, and great for general-purpose programming as
+    well.  Installing all of its research packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.anaconda.com/products/individual">Anaconda</a>,
+    an all-in-one installer.
+  </p>
+
+  <p>
+    Regardless of how you choose to install it,
+    <strong>please make sure you install Python version 3.x</strong>
+    (e.g., 3.6 is fine).
+  </p>
+
+  
+  <p>
+    We will teach Python using the <a href="https://jupyter.org/">Jupyter Notebook</a>,
+    a programming environment that runs in a web browser (Jupyter Notebook will be installed by Anaconda). For this to work you will need a reasonably
+    up-to-date browser. The current versions of the Chrome, Safari and
+    Firefox browsers are all
+    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+    (some older browsers, including Internet Explorer version 9
+    and below, are not).
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#python-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#python-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#python-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="python-windows">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda for Windows installer with Python 3. (If you are not sure which version to choose, you probably want the 64-bit Graphical Installer <em>Anaconda3-...-Windows-x86_64.exe</em>)</li>
+          <li>Install Python 3 by running the Anaconda Installer, using all of the defaults for installation <em>except</em> make sure to check <strong>Add Anaconda to my PATH environment variable</strong>.</li>
+        </ol>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/xxQ0mzZ8UvA?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="python-macos">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda Installer with Python 3 for macOS (you can either use the Graphical or the Command Line Installer).</li>
+          <li>Install Python 3 by running the Anaconda Installer using all of the defaults for installation.</li>
+        </ol>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/TcSAln46u9U?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="python-linux">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda Installer with Python 3 for Linux.<br />
+            (The installation requires using the shell. If you aren't
+            comfortable doing the installation yourself
+            stop here and request help at the workshop.)
+          </li>
+          <li>
+            Open a terminal window and navigate to the directory where
+            the executable is downloaded (e.g., `cd ~/Downloads`).
+          </li>
+          <li>
+            Type <pre>bash Anaconda3-</pre> and then press
+            <kbd>Tab</kbd> to autocomplete the full file name. The name of
+            file you just downloaded should appear.
+          </li>
+          <li>
+            Press <kbd>Enter</kbd>
+            (or <kbd>Return</kbd> depending on your keyboard).
+            You will follow the text-only prompts.
+            To move through the text, press <kbd>Spacebar</kbd>.
+            Type <code>yes</code> and press enter to approve the license.
+            Press <kbd>Enter</kbd> (or <kbd>Return</kbd>)
+            to approve the default location
+            for the files.
+            Type <code>yes</code> and press
+            <kbd>Enter</kbd> (or <kbd>Return</kbd>)
+            to prepend Anaconda to your <code>PATH</code>
+            (this makes the Anaconda distribution the default Python).
+          </li>
+          <li>
+            Close the terminal window.
+          </li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</div>
+
+
+      
+<footer>
+  <hr/>
+  <div class="row">
+    <div class="col-md-6" align="left">
+      <h4>
+	Copyright &copy; 2016–2022
+	
+	<a href="https://software-carpentry.org">Software Carpentry</a>
+	
+      </h4>
+    </div>
+    <div class="col-md-6" align="right">
+      <h4>
+	<a href="mailto:team@carpentries.org">Contact The Carpentries</a>
+      </h4>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lesson.js"></script>
+
+<script>
+/* Based on https://stackoverflow.com/a/30894829/1802726 */
+var show_instructions = function() {
+     //set all nav tabs to inactive
+    $('.nav-tabs li').removeClass('active');
+
+    //get all nav tabs matching the os and set to active
+    $('.nav-tabs li a[href*="'+localStorage.os+'"]').closest('li').addClass('active');
+
+    //set all tabs to inactive
+    $('.tab-pane').removeClass('active');
+
+    //get all tabs matching the os and set to active
+    $('.tab-pane[id*="'+localStorage.os+'"]').addClass('active');
+}
+
+if (typeof(Storage) !== "undefined") {
+    if (localStorage.os == "undefined") {
+        localStorage.os = "windows";
+    }
+    show_instructions();
+} else {
+    console.log("No localStorage");
+}
+
+/* Based on https://stackoverflow.com/a/30894829/1802726 */
+$('.nav-tabs li a').click(function(){
+    //get selected os
+    localStorage.os = $(this)[0].dataset.os;
+    show_instructions();
+});
+
+  // detect misssing iframe for Eventbrite
+  $(document).ready(function(){
+      if ($('iframe').height() == 0) {
+          $('iframe').before('<p>Looks like your adblocker blocked the registration window. Please navigate to <a href="https://www.eventbrite.com/tickets-external?eid=&ref=etckt">https://www.eventbrite.com/tickets-external?eid=&ref=etckt</a> to register.</p>');
+      }
+  });
+
+  // hide alerts when site is rendered on carpentries.github.io
+  $(document).ready(function() {
+      if (location.href.startsWith("https://carpentries.github.io/workshop-template/")) {
+          $("div.alert").hide();
+      }
+  });
+
+
+
+<script src="/assets/js/anchor.min.js"></script>
+<script>
+    anchors.add();
+</script>
+
+  </body>
+</html>
